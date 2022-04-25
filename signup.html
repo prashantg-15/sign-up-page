@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 2</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="nav-bar">
+
+                <div class="logo">
+                    <a href="#">Practical<span>Two</span></a>
+                </div>
+
+                <nav>
+                    <ul class="primary-nav">
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-section">
+
+                <h2>SIGN UP</h2>
+
+                <form action="/action.php" name="myform" onsubmit="return validateForm()" method="post">
+
+                    <div class="name">
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                        <span id="fname-error"></span>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                        <span id="lname-error"></span>
+                    </div> 
+
+                    <div class="email-id">
+                        <input type="text" id="email" placeholder="Email">
+                        <span id="email-error"></span>
+                    </div>
+
+                    <div class="user-id">
+                        <input type="text" id="username" placeholder="Username">
+                        <span id="username-error"></span>
+                    </div>
+
+                    <div class="password">
+                        <input type="password" id="pass" placeholder="Password">
+                        <span id="pass-error"></span>
+                    </div>
+
+                    <div class="confirm-password">
+                        <input type="password" id="cpass" placeholder="Confirm Password">
+                        <span id="cpass-error"></span>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" id="button" value="Submit">
+                        <a class="clear" href="signup.html">Reset</a>
+                    </div>
+                    
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function validateForm() {
+
+            var fname = document.getElementById('fname').value;
+            var lname = document.getElementById('lname').value;
+            var email = document.getElementById('email').value;
+            var username = document.getElementById('username').value;
+            var pass = document.getElementById('pass').value;
+            var cpass = document.getElementById('cpass').value;
+            var regex = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            // First Name Validation
+            if(fname == "") {
+                document.getElementById('fname-error').innerHTML = "Please enter First Name";
+                return false;
+            }
+            if(fname.length<3 || fname.length>15) {
+                document.getElementById('fname-error').innerHTML = "Please provide a Valid Name";
+                return false;
+            }
+            if(!isNaN(fname)) {
+                document.getElementById('fname-error').innerHTML = "First Name cannot be number";
+                return false;
+            }
+
+            // Last Name Validation
+            if(lname == "") {
+                document.getElementById('lname-error').innerHTML = "Please enter Last Name";
+                return false;
+            }
+            if(lname.length<3 || lname.length>15) {
+                document.getElementById('lname-error').innerHTML = "Please Provide a Valid Name";
+                return false;
+            }
+            if(!isNaN(lname)) {
+                document.getElementById('lname-error').innerHTML = "Last Name cannot be Number";
+                return false;
+            }
+
+            // Email Validation
+            // /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+            if(email == ""){
+				document.getElementById('email-error').innerHTML ="Please enter Email Id";
+				return false;
+			}
+            if(!email.match(regex)) {
+                document.getElementById('email-error').innerHTML ="Please enter proper Email Id";
+				return false;
+            }
+
+            // Username Validation
+            if(username == ""){
+				document.getElementById('username-error').innerHTML ="Please enter the username";
+				return false;
+			}
+			if(username.length<=5 || username.length>15) {
+				document.getElementById('username-error').innerHTML ="Username length must be between 5 and 15";
+				return false;	
+			}
+
+            // Password Validation
+            if(pass == ""){
+				document.getElementById('pass-error').innerHTML ="Please fill the password field";
+				return false;
+			}
+			if(pass.length <= 5 || pass.length > 15) {
+				document.getElementById('pass-error').innerHTML ="Passwords length must be between 5 and 15";
+				return false;	
+			}
+
+            // Confirm Password Validation
+            if(cpass == ""){
+				document.getElementById('cpass-error').innerHTML ="Please fill the confirm password field";
+				return false;
+			}
+            if(cpass!=pass){
+				document.getElementById('cpass-error').innerHTML ="Confirm Password do not match with the Password";
+				return false;
+			}
+
+        }
+    </script>
+
+</body>
+
+</html>

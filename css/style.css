@@ -1,0 +1,313 @@
+:root {
+    --primary-color: #007af3;
+    --hover-color: #0068d1;
+}
+
+body {
+    background: #f2f2f2;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: white;
+    padding: .8em;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    align-self: center;
+}
+
+.logo a span {
+    color: var(--primary-color);
+}
+
+.primary-nav{
+    display: flex;
+}
+
+.primary-nav li {
+    /* font-size: 1.2em; */
+    margin-left: 2em;
+    align-self: center;
+}
+
+.primary-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* -- Hero - Section --  */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.hero-section {
+    background: white;
+    width: 40em;
+    height: 25em;
+    border: .3em solid white;
+    border-radius: 5px;
+}
+
+.hero-section h2 {
+    text-align: center;
+}
+
+.label-one, .label-two {
+    margin-bottom: 1.5em;
+    margin-left: 6.5em;
+    font-size: 1.2em;
+}
+
+.label-one {
+    margin-top: 3em;
+}
+
+.label-one label {
+    align-self: center;
+}
+
+.label-one input[type="text"] {
+    margin-left: 2em;
+    padding: .7em .3em;
+}
+
+.label-two input[type="text"] {
+    margin-left: 1em;
+    padding: .7em .3em;
+}
+
+.button {
+    margin-left: 11em;
+    margin-top: 3em;
+}
+
+.button .add, .subtract, .multiply {
+    font-size: 1.2em;
+    padding: .4em .9em;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 2em;
+    margin-right: 1.2em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button .add:hover, .subtract:hover, .multiply:hover, .button a:hover {
+    background: var(--hover-color);
+    transition: 0.3s ease-in-out;
+}
+
+.button a{
+    font-size: 1.1em;
+    padding: .4em .9em;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.hero-section .label-ans{
+    margin-left: 14.5em;
+    font-size: 1.2em;
+}
+
+.multiply {
+    margin-left: 1.5em;
+}
+
+#table {
+    display: none;
+    text-align: center;
+    background: white;
+    width: 40em;
+    height: 15em;
+    border: .3em solid white;
+    border-radius: 5px;
+    margin-left: -0.30em;
+}:root {
+    --primary-color: #007af3;
+    --hover-color: #0068d1;
+}
+
+body {
+    background: #f2f2f2;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: white;
+    padding: .8em;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    align-self: center;
+}
+
+.logo a span {
+    color: var(--primary-color);
+}
+
+.primary-nav{
+    display: flex;
+}
+
+.primary-nav li {
+    /* font-size: 1.2em; */
+    margin-left: 2em;
+    align-self: center;
+}
+
+.primary-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* -- Hero - Section --  */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.hero-section {
+    background: white;
+    width: 40em;
+    height: 25em;
+    border: .3em solid white;
+    border-radius: 5px;
+}
+
+.hero-section h2 {
+    text-align: center;
+}
+
+.label-one, .label-two {
+    margin-bottom: 1.5em;
+    margin-left: 6.5em;
+    font-size: 1.2em;
+}
+
+.label-one {
+    margin-top: 3em;
+}
+
+.label-one label {
+    align-self: center;
+}
+
+.label-one input[type="text"] {
+    margin-left: 2em;
+    padding: .7em .3em;
+}
+
+.label-two input[type="text"] {
+    margin-left: 1em;
+    padding: .7em .3em;
+}
+
+.button {
+    margin-left: 11em;
+    margin-top: 3em;
+}
+
+.button .add, .subtract, .multiply {
+    font-size: 1.2em;
+    padding: .4em .9em;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 2em;
+    margin-right: 1.2em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button .add:hover, .subtract:hover, .multiply:hover, .button a:hover {
+    background: var(--hover-color);
+    transition: 0.3s ease-in-out;
+}
+
+.button a{
+    font-size: 1.1em;
+    padding: .4em .9em;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.hero-section .label-ans{
+    margin-left: 14.5em;
+    font-size: 1.2em;
+}
+
+.multiply {
+    margin-left: 1.5em;
+}
+
+#table {
+    display: none;
+    text-align: center;
+    background: white;
+    width: 40em;
+    height: 15em;
+    border: .3em solid white;
+    border-radius: 5px;
+    margin-left: -0.30em;
+}

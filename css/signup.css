@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #007af3;
+    --hover-color: #0068d1;
+}
+
+body {
+    background: #f4f4f4;
+    margin: 0;
+    font-family: 'Poppins';
+    transition: 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: white;
+    padding: .8em;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    align-self: center;
+}
+
+.logo a span {
+    color: var(--primary-color);
+}
+
+.primary-nav{
+    display: flex;
+}
+
+.primary-nav li {
+    font-size: 1.1em;
+    margin-left: 2em;
+    align-self: center;
+}
+
+.primary-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* -- Hero - Section --  */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.hero-section {
+    background-color: white;
+    width: 30em;
+    height: 35em;
+    border-radius: 5px;
+}
+
+.hero-section h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border: 0.4em solid var(--primary-color);
+    border-radius: 5px 5px 0 0;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+form {
+    margin: 2em;
+}
+
+/* form label {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-right: 2em;
+} */
+
+.name, .email-id, .user-id, .password, .confirm-password {
+    margin-bottom: 2em;
+}
+
+::placeholder {
+    font-size: 1.2em;
+}
+
+.name #fname {
+    margin-right: 1.6em;
+}
+
+.name input, .email-id input, .user-id input,
+.password input, .confirm-password input {
+    padding: 1em .5em;
+    background: white;
+    border: 1.5px solid lightgray;
+    border-radius: 3px;
+    width: 43%;
+    position: relative;
+}
+
+.email-id input, .user-id input, .password input,
+.confirm-password input {
+    width: 96.5%;
+    margin: 0px;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+}
+
+.button input {
+    margin-right: 1.5em;
+}
+
+input[type="submit"], .button a {
+    font-size: 1.1em;
+    padding: .5em 1.3em;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: .8em;
+}
+
+input[type="submit"]:hover, .button a:hover {
+    background: var(--hover-color);
+    transition: 0.3s ease-in-out;
+}
+
+/* ----- Span ----- */
+.name span, .email-id span, .user-id span,
+.password span, .confirm-password span {
+    display: block;
+    position: absolute;
+    font-size: small;
+    /* font-weight: bold; */
+    margin-left: .7em;
+    margin-top: .2em;
+    color: red;
+}
+
+#lname-error {
+    margin-left: 17.8em;
+}
